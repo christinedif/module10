@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>My Info</h2>
+  <div ng-if="!myInfoCtrl.signedUp">
+    <p>Not Signed Up Yet.</p>
+    <a ui-sref="public.signup" class="btn btn-info">Sign up Now!</a></p>
+
+  </div>
+  <div ng-if="myInfoCtrl.signedUp">
+        <div> First name: {{ myInfoCtrl.firstName }}</br>
+        Last name: {{ myInfoCtrl.lastName }}</br>
+        E-mail address: {{ myInfoCtrl.email }}</br>
+        Phone number: {{ myInfoCtrl.phone }}</br>
+      </div>
+
+   
+        <h3>Favorite Dish:</h3>
+      </div>
+
+
+         {{ myInfoCtrl.favMenuItem.name }}
+         <p> Having issues viewing favMenuItem. See console.. Printing out but not able to view in html.</p>
+
+        <div ng-show="!myInfoCtrl.favMenuItem">
+          <p> Entered invalid shortname.</p>
+
+          <p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</div>
